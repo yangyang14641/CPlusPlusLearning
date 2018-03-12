@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.f90": "fortran-modern",
+        "__locale": "cpp",
+        "ios": "cpp"
+    }
+}
