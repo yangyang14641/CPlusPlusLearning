@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg936\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red59\green244\blue36;\red0\green0\blue128;\red242\green242\blue242;
+\red207\green125\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c24589\c94440\c18300;\csgenericrgb\c0\c0\c50196\c79821;\csgray\c95825;
+\cssrgb\c85420\c59134\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22600\viewh10520\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \CocoaLigature0 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ vim caching.c\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ icc -O3 -Wall caching.c -o caching\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ ./caching \
+Accessing by rows. Time is  3.71e-02\
+Accessing by cols. Time is  1.85e-01\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ icc -O3 -Wall caching.c -o caching\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ vim caching.c\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ icc -Wall caching.c -o caching\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ ./caching \
+Accessing by rows. Time is  5.01e-02\
+Accessing by cols. Time is  4.24e-01\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ gcc -Wall caching.c -o caching\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ ./caching \
+Accessing by rows. Time is  2.95e-01\
+Accessing by cols. Time is  8.49e-01\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ gcc -O3 -Wall caching.c -o caching\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ ./caching \
+Accessing by rows. Time is  1.34e-01\
+Accessing by cols. Time is  7.16e-01\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ nvcc -O3  caching.c -o caching\
+\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ ./caching \
+Accessing by rows. Time is  1.40e-01\
+Accessing by cols. Time is  7.38e-01\
+}
