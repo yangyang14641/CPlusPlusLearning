@@ -7,17 +7,16 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww21660\viewh6760\viewkind0
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\b\fs28 \cf2 \cb3 \CocoaLigature0 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ ./tryCMath \
+\f0\b\fs28 \cf2 \cb3 \CocoaLigature0 yangyang@yangyang-XPS-8900\cf4 \cb3 :\cf5 \cb3 ~/Desktop\cf4 \cb3 $ icc floatsArithmetic.c -o floatsArithmetic\
+\cf2 \cb3 yangyang@yangyang-XPS-8900\cf4 \cb3 :\cf5 \cb3 ~/Desktop\cf4 \cb3 $ ./floatsArithmetic \
 argc = 1\
-Program name: ./tryCMath\
+Program name: ./floatsArithmetic\
 \
 Double-precision float Pi =    3.14159265358979311600\
 Single-precision float Pi =    3.14159274101257324219\
-\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ echo "# define M_PIl          3.141592653589793238462643383279502884L /* pi */"\
-# define M_PIl          3.141592653589793238462643383279502884L /* pi */\
-\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ echo "scale=20;2^(-52)" | bc\
-.00000000000000022204\
-\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ echo "scale=20;2^(-23)" | bc\
-.00000011920928955078\
-\cf2 yangyang@yangyang-XPS-8900\cf4 :\cf5 ~/Desktop\cf4 $ \
+#define FLOAT Pi =    3.14159274101257324219\
+\
+ M_PI in <math.h> is:\
+#define M_PI        3.14159265358979323846264338327950288   /* pi             */ \
+\cf2 \cb3 yangyang@yangyang-XPS-8900\cf4 \cb3 :\cf5 \cb3 ~/Desktop\cf4 \cb3 $ \
 }
